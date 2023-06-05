@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cloudric News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://iconarchive.com/download/i87068/graphicloads/colorful-long-shadow/Cloud.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/script.js" defer></script>
+        <script src="js/search.js" defer></script>
+    </head>
+  
+    <body>
+        <div class="landing-page">
+            <header class="home">
+                <form class="search" id="search-bar" action='html/results.html'>
+                    <input class="search-txt" id="newsQuery" type="text" placeholder="Search...">
+                    <button class="submit"><img src="img/icons8-search-30.png" alt=""></button>
+                </form>
+                <h1 class="title-item">
+                    <a class="title" href="index.html">Cloudric News</a>
+                </h1>
+
+                <button class="mobile-toggle" aria-controls="primary-nav" aria-expanded="false"></button>
+
+                <nav>
+                    <ul id="primary-nav" data-visible="false" class="nav-items">
+                        <li class="first-search">
+                            <form class="nav-search" id="nav-search-bar" >
+                                <input class="search-txt" id="newsQuery" type="text" placeholder="Search...">
+                                <button class="submit"><img src="img/icons8-search-30.png" alt=""></button>
+                            </form>  
+                        </li>
+                        <li>
+                            <a class="nav-item" href="html/general.html">General</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="html/business.html">Business</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="html/entertainment.html">Entertainment</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="html/health.html">Health</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="html/science.html">Science</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="html/sports.html">Sports</a>
+                        </li>
+                        <li>
+                            <a class="nav-item" href="html/technology.html">Technology</a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr>
+            </header>
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slider"></div>
+                </div>
+                <div class="direct">
+                    <button class="prev">&#10094</button> 
+                    <button class="next">&#10095</button>  
+                </div>
+                <div class="nav-manual">
+                    <span class="manual-btn dot1 check"></span>  
+                    <span class="manual-btn dot2"></span>  
+                    <span class="manual-btn dot3"></span>  
+                    <span class="manual-btn dot4"></span>  
+                </div>
+            </div>
+        </div>
+
+        <main>
+        </main>
+        <footer>
+            <hr>
+            <div class="footer-top">
+                <a class="footer-title" href="index.html">Cloudric News</a>
+                <div class="newsletter-container">
+                    <p>NEWSLETTER SIGNUP</p>
+                    <p>Be the first to know!</p>
+                    <form class="input-container">
+                        <input type="text" id="email" name="email" placeholder="Email address">
+                        <button>SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-text">
+                <p>&copy; 2023 THE Cloudric ALL RIGHTS RESERVED</p>
+                <p><a href="#">ABOUT THE Cloudric</a>  |  <a href="#">CONTACT US</a>  |  <a href="#">PRIVACY POLICY</a>  |  <a href="#">TERMS OF SERVICE</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

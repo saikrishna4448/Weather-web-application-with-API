@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudric</title>
+    <link rel="shortcut icon" href="https://iconarchive.com/download/i87068/graphicloads/colorful-long-shadow/Cloud.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="api.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="title">
+        <h1>API BASED WEATHER APPLICATIION</h1>
+    </div>
+    <div id='nav_bar'>
+        <ul class='nav_links'>
+            <li><a href="#home">Home</a></li>
+            <li><a href="hourly.html">Hourly</a></li>
+            <li><a href="weekly.html">Weekly</a></li>
+            <li><a href="news.html" target="_blank">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+           <li class="searchbox"> 
+            <div class="search"> 
+                <input type="text" class="input-field" id="searchbox2" placeholder="Enter your city..." autocapitalize="off" required>
+                <span class="material-icons">search</span>
+            </div>
+            </li>
+            <li>
+                <div class="location" style="display: flex;">
+                    <button style="cursor: pointer; background:none" id="get-location"><i class="material-icons"
+                        style="color:#43affc">my_location </i></button>
+                    <p style="margin-left: 5px; font-size: 20px;" id="location">location</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="boxcontainer">
+        <div class="app-main" >
+            <header>Cloudric</header>
+            <section class="input-part">
+                <div class="searchInputBox">
+                    <input type="text"  placeholder="Enter city name..." id="searchbox" autocomplete="off">
+                    <div class="seperator"></div>
+                    <button id="get-location">Get Location</button>
+                    </div>
+            </section>
+            </div>
+    </div>
+    <div class="weather-body">
+        <div class="location-details">
+            <p id="city">Chandigarh, IN</p>
+            <p style="padding-top: 2px;" id="date">11 March (Saturday), 2023</p> 
+        </div>
+
+        <div class="weather-status">
+            <div class="temp" id="temp" >34&deg;C</div>
+            <div class="hehe">
+                <div style="margin-top: 10px">
+                    <div class="feelslike">Feels Like <label id="feelslike"></label>&deg;C</div>
+                    <div class="sunrise">Sunrise <label id="sunrise"></label></div>
+                    <div class="sunset">Sunset <label id="sunset"></label></div>
+                    <div class="humidity">Humidity <label id="humidity">32</label>%</div>
+                    <div class="weather" >Sky <label id="weather"></label></div>
+                    <div class="windspeed"> Wind Speed <label id="windspeed"></label>m/s</div>
+    
+    
+                </div>
+    
+                <div class="logo">
+                    <img src="http://openweathermap.org/img/wn/03d@2x.png" alt="weather condition">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="weekly"></div>   
+    </div>
+
+    <div class="wrappercontainer">
+        <div class="wrapper">
+            <div class="box1">
+
+                <div class="am">
+                    <p id="htime1">12/3 11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp1">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg1">
+                </div>
+
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime2">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp2">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg2">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime3">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp3">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg3">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime4">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp4">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg4">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime5">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp5">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg5">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime6">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp6">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg6">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime7">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp7">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg7">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime8">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp8">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg8">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime9">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2>3<label id="htemp9">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg9">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime10">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp10">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg10">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime11">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp11">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg11">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime12">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp12">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg12">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime13">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp13">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg13">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime14">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp14">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg14">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime15">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp15">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg15">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime16">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp16">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg16">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime17">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp17">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg17">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime18">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp18">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg18">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime19">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp19">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg19">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime20">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp20">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg20">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime21">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp21">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg21">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime22">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp22">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg22">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime23">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp23">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg23">
+                </div>
+            </div>
+            <div class="box1">
+                <div class="am">
+                    <p id="htime24">11:00 AM</p>
+                </div>
+
+                <div class="degree">
+                    <h2><label id="htemp24">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo1" id="himg24">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hourly"></div>   
+
+    
+    <div class="wrappercontainer-1">
+        <div class="wrapper-1">
+            <div class="box2">
+                <div class="day">
+                    <p id="hday1">Sunday</p>
+                </div>
+
+                <div class="degree1">
+                    <h2><label id="wtemp1">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo2" id="wimg1">
+                </div>
+
+            </div>
+            <div class="box2">
+                <div class="day">
+                    <p id="hday2">Sunday</p>
+                </div>
+
+                <div class="degree1">
+                    <h2><label id="wtemp2">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo2" id="wimg2">
+                </div>
+            </div>
+            <div class="box2">
+                <div class="day">
+                    <p id="hday3">Sunday</p>
+                </div>
+
+                <div class="degree1">
+                    <h2><label id="wtemp3">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo2" id="wimg3">
+                </div>
+            </div>
+            <div class="box2">
+                <div class="day">
+                    <p id="hday4">Sunday</p>
+                </div>
+
+                <div class="degree1">
+                    <h2><label id="wtemp4">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo2" id="wimg4">
+                </div>
+            </div>
+            <div class="box2">
+                <div class="day">
+                    <p id="hday5">Sunday</p>
+                </div>
+
+                <div class="degree1">
+                    <h2><label id="wtemp5">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo2" id="wimg5">
+                </div>
+            </div>
+            <div class="box2">
+                <div class="day">
+                    <p id="hday6">Sunday</p>
+                </div>
+
+                <div class="degree1">
+                    <h2><label id="wtemp6">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo2" id="wimg6">
+                </div>
+            </div>
+            <div class="box2">
+                <div class="day">
+                    <p id="hday7">Sunday</p>
+                </div>
+
+                <div class="degree1">
+                    <h2><label id="wtemp7">36</label><span>&#8451;</span></h2>
+                </div>
+                <div class="logo2" id="wimg7">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="team"></div>   
+    
+    <div class="container">
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/krishna.jpg" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Konni Sai Krishna</div>
+                 <div class="job">Front-End Developer & Web designer</div>
+               </div>
+               <div class="media-icons">
+                 <a href="https://github.com/saikrishna4448" target="_blank"><i class="fab fa-github"></i></a>
+                 <a href="https://www.kaggle.com/konnisaikrishna" target="_blank"><i class="fab fa-kaggle"></i></a>
+                 <a href="https://www.linkedin.com/in/konni-sai-krishna-2918651bb/" target="_blank"><i class="fab fa-linkedin"></i></a>
+               </div>
+             </div>
+            </div>
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                 <img src="images/santosh.jpg" alt="">
+               </div>
+               <div class="details">
+                 <div class="name">Mukka Santosh Narasimha</div>
+                 <div class="job">Back-end Developer</div>
+               </div>
+               <div class="media-icons">
+                 <a href="https://github.com/SantoshNarasimha" target="_blank"><i class="fab fa-github"></i></a>
+                 <a href="https://twitter.com/santosh_mukka" target="_blank"><i class="fab fa-twitter"></i></a>
+                 <a href="https://www.linkedin.com/in/santosh-narasimha-162668232/" target="_blank"><i class="fab fa-linkedin"></i></a>
+               </div>
+             </div>
+            </div>
+           
+            </div>
+          </div>
+       
+      </div>
+
+    <div class="contact-us" id="contact">
+     <p>location Chandigarh University</p>
+     <p>Help</p>
+     <p>Number 7848956236</p>
+
+    </div>
+    <script src="api.js"></script>
+</body>
+</html>
